@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.bcaguidesnepal.ui.home.HomeFragment"
+        android:label="Books"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_mcq"
+        android:name="com.example.bcaguidesnepal.ui.mcq.McqFragment"
+        android:label="MCQ Practice"
+        tools:layout="@layout/fragment_mcq" />
+
+    <fragment
+        android:id="@+id/nav_notices"
+        android:name="com.example.bcaguidesnepal.ui.notices.NoticesFragment"
+        android:label="Notices"
+        tools:layout="@layout/fragment_notices" />
+    // added fragments
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.bcaguidesnepal.ui.contact.ContactFragment"
+        android:label="Contact Us"
+        tools:layout="@layout/contact_fragment" />
+
+    <fragment
+        android:id="@+id/nav_contribute"
+        android:name="com.example.bcaguidesnepal.ui.contribute.ContributeFragment"
+        android:label="Contribute"
+        tools:layout="@layout/contribute_fragment" />
+
+</navigation>
